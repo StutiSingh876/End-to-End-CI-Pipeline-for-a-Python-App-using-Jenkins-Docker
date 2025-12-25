@@ -14,7 +14,7 @@ pipeline {
             }
         }
 
-        stage('Run Container') {
+        stage('Run Tests') {
             steps {
                 sh 'docker run --rm ci-python-app'
             }
